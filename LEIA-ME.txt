@@ -1,0 +1,74 @@
+MAJESTADE DO CAOS — V3.0
+Colônia de Mafagafos
+
+COMO ABRIR
+Extraia o ZIP inteiro. Mantenha index.html e three.r160.min.js na mesma pasta.
+Abra index.html em um navegador com WebGL. Presencial e teste com bots funcionam
+sem internet. Não é necessário instalar pacotes nem executar um build.
+
+PARA PUBLICAR
+Envie os dois arquivos juntos à raiz do GitHub Pages ou de um projeto estático
+na Vercel. Nenhum comando de build é necessário. Use o endereço HTTPS publicado
+para convidar amigos. O arquivo three.r160.min.js fornecido foi preservado.
+
+O QUE MUDOU / COMO TESTAR
+1. Seis formatos e 216 perguntas: escolha Testar com bots e jogue 8 rodadas.
+   Texto, escolha, escala, ranking, emoji e desenho alternam durante a partida.
+   As perguntas usadas ficam salvas para evitar repetições entre partidas.
+2. Favorita da coroa: ao julgar texto/emoji/desenho, escolha exatamente uma ♥.
+   Confira que não é possível confirmar sem ela. A majestade que permanece
+   no trono ganha +50. Nas regras, experimente queda pela metade ou ao zero.
+3. Revelações: avance por resposta, nota, autor e subida. Confira os degraus
+   iluminados, mensageiros, sons, reações e a cerimônia de troca da coroa.
+4. Mundo 3D: arraste a câmera e pressione C para centralizar. Nas opções,
+   experimente Alta, Média e Baixa. A câmera fica limitada ao salão.
+5. Presencial: crie 3 a 8 jogadores e passe o aparelho após cada tela de sigilo.
+   Recarregue a página e use Continuar para recuperar a partida salva.
+6. Online: crie uma sala ou escolha Criar sala no telão. O telão é espectador.
+   Entre pelo link/QR com 3 celulares. Feche um cliente e volte pelo mesmo
+   navegador, código e apelido para recuperar a vaga, pontos e degraus.
+   Se a majestade cair, a mesma pergunta recomeça com outra majestade.
+7. Final: termine a partida, escolha a Resposta da noite e baixe o PNG
+   de 1080 x 1920. O compartilhamento nativo aparece quando disponível.
+
+PONTUAÇÃO
+Cada degrau: +100. Conquista da coroa: +300.
+Escolha: acerto +2 degraus. Escala: exato +2; diferença até 2 vale +1.
+Ranking: ordem exata +2; soma das distâncias de posição até 4 vale +1.
+A regra Favorita da coroa aplica-se aos formatos com julgamento humano.
+Sem respostas válidas, a rodada pode continuar sem favorita.
+
+PERGUNTAS PERSONALIZADAS
+Uma por linha. {n} é substituído pelo nome da majestade.
+Exemplos:
+escala: Quanto {n} gosta de acordar cedo?
+escolha: Qual lanche {n} prefere? | Pastel | Coxinha | Bolo | Empada
+ranking: Ordene os rolês de {n}. | Cinema | Parque | Praia | Casa
+Outros prefixos: texto:, emoji:, desenho:.
+Bots têm respostas próprias para o banco incluído; nas perguntas personalizadas
+usam palpites de demonstração, sem interpretar o enunciado.
+
+ATALHOS
+Q/W/E: notas 0/1/♥. Enter: enviar. C: centralizar câmera. Esc: opções.
+Som, tela cheia e qualidade ficam nas opções. A preferência de movimento
+reduzido acompanha o sistema. A renderização pausa com a aba oculta.
+
+REDE E COMPATIBILIDADE
+Somente o modo online carrega PeerJS 1.5.5 pela internet.
+O anfitrião precisa manter a página aberta. Não há migração do anfitrião.
+A reentrada depende do token salvo no mesmo navegador; modo anônimo ou limpar
+os dados pode impedir recuperar a vaga. Redes restritivas podem bloquear WebRTC.
+Salas V3 usam mafagafo-v3- e não se conectam às versões anteriores.
+
+VALIDAÇÃO DESTA ENTREGA
+- Regras: 8 rodadas, 6 formatos, favorita obrigatória, respostas de bots sem
+  repetição na rodada, pontuação, perguntas sem repetição e presencial 3/8.
+- Navegador: partida completa com bots, salvar/continuar, layouts desktop/mobile,
+  geração e download do cartão final e presets gráficos.
+- Rede: anfitrião + 3 clientes com transporte simulado, reentrada, queda da
+  majestade, encerramento e sigilo das respostas. QR decodificado em teste.
+- Conexões WebRTC públicas com aparelhos reais ainda exigem teste prático.
+- Metas de 60 fps desktop / 30 fps mobile não foram certificadas em hardware
+  intermediário. Se necessário, selecione Média ou Baixa.
+
+Os quatro outros jogos da central permanecem indisponíveis.
