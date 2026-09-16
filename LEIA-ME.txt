@@ -1,4 +1,4 @@
-MAJESTADE DO CAOS — V3.0
+MAJESTADE DO CAOS — V3.1
 Colônia de Mafagafos
 
 COMO ABRIR
@@ -13,8 +13,17 @@ para convidar amigos. O arquivo three.r160.min.js fornecido foi preservado.
 
 O QUE MUDOU / COMO TESTAR
 1. Seis formatos e 216 perguntas: escolha Testar com bots e jogue 8 rodadas.
-   Texto, escolha, escala, ranking, emoji e desenho alternam durante a partida.
+   Texto ocupa cerca de 60% das rodadas; os outros cinco formatos dividem 40%.
+   Em 8 rodadas: 5 de texto + 3 especiais. Em 20: 12 de texto + 8 especiais.
+   Nem todos os formatos especiais precisam aparecer numa partida de 8 rodadas.
+   Cada súdito recebe uma pergunta diferente, no mesmo formato da rodada.
+   A majestade julga cada resposta junto com sua pergunta. Nos formatos
+   automáticos, prepara um gabarito secreto para cada pergunta individual.
    As perguntas usadas ficam salvas para evitar repetições entre partidas.
+   Antes de enviar, use Pular pergunta: são 3 usos por pessoa na partida
+   inteira. Pular preserva o formato e troca apenas aquela pergunta. Se for
+   automática, a majestade prepara um novo gabarito antes de retomar a coleta.
+   Os pulos usados continuam gastos ao salvar, trocar a coroa ou reconectar.
 2. Favorita da coroa: ao julgar texto/emoji/desenho, escolha exatamente uma ♥.
    Confira que não é possível confirmar sem ela. A majestade que permanece
    no trono ganha +50. Nas regras, experimente queda pela metade ou ao zero.
@@ -58,11 +67,12 @@ Somente o modo online carrega PeerJS 1.5.5 pela internet.
 O anfitrião precisa manter a página aberta. Não há migração do anfitrião.
 A reentrada depende do token salvo no mesmo navegador; modo anônimo ou limpar
 os dados pode impedir recuperar a vaga. Redes restritivas podem bloquear WebRTC.
-Salas V3 usam mafagafo-v3- e não se conectam às versões anteriores.
+Todos os aparelhos devem abrir a V3.1 atualizada. Salas V3 usam mafagafo-v3- e não se conectam às versões anteriores.
 
 VALIDAÇÃO DESTA ENTREGA
-- Regras: 8 rodadas, 6 formatos, favorita obrigatória, respostas de bots sem
-  repetição na rodada, pontuação, perguntas sem repetição e presencial 3/8.
+- Regras: partida de 20 rodadas com todos os formatos, proporção 60/40,
+  perguntas individuais, favorita, sigilo dos gabaritos, três pulos por
+  pessoa e rejeição de envios para perguntas já trocadas.
 - Navegador: partida completa com bots, salvar/continuar, layouts desktop/mobile,
   geração e download do cartão final e presets gráficos.
 - Rede: anfitrião + 3 clientes com transporte simulado, reentrada, queda da
